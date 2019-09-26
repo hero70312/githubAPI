@@ -1,0 +1,54 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #09d3ac;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("photo.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.panel {
+    background-color: #d5e8ff;
+    font-size: 20px;
+    flex: 1;
+    flexDirection: 'row';
+    justifyContent: 'space-between';
+}
+
+
+.project {
+    width : 200px;
+    padding: 5px;
+    margin:5px;
+    background-color: #fff6f9;
+}
+
+
