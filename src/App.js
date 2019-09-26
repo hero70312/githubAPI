@@ -9,9 +9,9 @@ class Project extends Component {
 
         return (
             <div className="project">
-                <p>{`title: ${title}`}</p>
-                <p>{`description: ${description}`}</p>
-                <a href={url}>{`url`}</a>
+                <p className="title">{`${title}`}</p>
+                <p>{`專案描述: ${description}`}</p>
+                <a href={url}>{`網址`}</a>
             </div>
         );
     }
