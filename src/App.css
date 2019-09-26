@@ -23,10 +23,10 @@
 
 .parallax {
     /* The image used */
-    background-image: url("photo.jpg");
+    background-image: url("github-logo.jpeg");
 
     /* Set a specific height */
-    min-height: 500px;
+    min-height: 800px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -48,6 +48,9 @@
     width : 200px;
     padding: 5px;
     margin:5px;
+    border-width: 2px;
+    border-color: #282c34;
+    border-radius: 10px;
     background-color: #fff6f9;
 }
 
