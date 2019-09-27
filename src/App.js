@@ -3,15 +3,17 @@ import './App.css';
 
 
 class Project extends Component {
-
     render() {
         const {title, description, url} = this.props;
 
         return (
             <div className="project">
-                <p className="title">{`${title}`}</p>
-                <p>{`專案描述: ${description}`}</p>
-                <a href={url}>{`網址`}</a>
+                {
+                    !title? <div/>:<div  className="project-content">
+                        <a href={url} className="title">{`${title}`}</a>
+                        <p>{`${description}`}</p>
+                    </div>
+                }
             </div>
         );
     }
@@ -39,6 +41,17 @@ class App extends Component {
             }
         });
 
+        let emptyObj = {
+            title: "",
+            url: "",
+            description: ""
+        };
+
+        while(data.length % 4 !== 0)
+        {
+            data.push(emptyObj);
+        }
+
         this.setState({
             repo: data,
         });
@@ -54,7 +67,7 @@ class App extends Component {
 
                 <div className="panel">
                     {
-                        repo.length && repo.map((v)=>{
+                        repo.length && repo.map((v) => {
                             return <Project title={v.title} url={v.url} description={v.description}/>
                         })
                     }
