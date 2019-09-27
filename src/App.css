@@ -26,9 +26,8 @@
     background-image: url("res/img/github-logo.jpeg");
 
     /* Set a specific height */
-    min-height: 800px;
+    min-height: 100vh;
 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,7 +48,6 @@
 
 }
 
-
 .project {
     width : 350px;
     margin:8px;
@@ -61,7 +59,7 @@
     justify-content: flex-start;
     justify-items: center;
     max-height: 300px;
-    min-height: 120px;
+    min-height: 150px;
     padding: 18px;
     text-align: left;
     border-width: 1px;
